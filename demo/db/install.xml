@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XMLDB PATH="local/demo/db" VERSION="20190603" COMMENT="XMLDB file comman settings tables for SMS(Student Management System)"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="../../../lib/xmldb/xmldb.xsd"
+>
+
+<TABLES>
+        
+        <TABLE NAME="local_usermail" COMMENT="Datails of user mail">
+            <FIELDS>
+                <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true"/>
+                <FIELD NAME="firstname" TYPE="char" LENGTH="255" NOTNULL="true" SEQUENCE="false" />
+                <FIELD NAME="lastname" TYPE="char" LENGTH="255" NOTNULL="true" SEQUENCE="false" />
+                <FIELD NAME="mailstatus" TYPE="int" LENGTH="1" DEFAULT="1" NOTNULL="true" SEQUENCE="false"/> 
+                <FIELD NAME="timecreated" TYPE="int" LENGTH="20" NOTNULL="true" SEQUENCE="false"/>
+            </FIELDS>
+            <KEYS>
+                <KEY NAME="primary" TYPE="primary" FIELDS="id" COMMENT="The unique id for  id"/>
+            </KEYS>
+        </TABLE>
+</TABLES>
+</XMLDB>
